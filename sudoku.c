@@ -3,7 +3,7 @@
 
 #define SIZE 9
 
-// Initial puzzle
+
 int board[SIZE][SIZE] = {
     {5, 3, 0, 0, 7, 0, 0, 0, 0},
     {6, 0, 0, 1, 9, 5, 0, 0, 0},
@@ -15,8 +15,7 @@ int board[SIZE][SIZE] = {
     {0, 0, 0, 4, 1, 9, 0, 0, 5},
     {0, 0, 0, 0, 8, 0, 0, 7, 9}
 };
-
-// original puzzle
+
 int original[SIZE][SIZE] = {
     {5, 3, 0, 0, 7, 0, 0, 0, 0},
     {6, 0, 0, 1, 9, 5, 0, 0, 0},
@@ -28,8 +27,7 @@ int original[SIZE][SIZE] = {
     {0, 0, 0, 4, 1, 9, 0, 0, 5},
     {0, 0, 0, 0, 8, 0, 0, 7, 9}
 };
-
-// Displaying board here
+
 void displayBoard()
 {
     printf("\n");
@@ -56,7 +54,6 @@ void displayBoard()
     printf("+-------+-------+-------+\n");
 }
 
-// Checking whether a move is valid
 int checkMove(int row, int col, int num)
 {
     // for rows
@@ -89,7 +86,7 @@ int checkMove(int row, int col, int num)
     return 1;
 }
 
-// Check whether Sudoku is completed
+
 int isComplete()
 {
     for (int i = 0; i < SIZE; i++)
@@ -104,7 +101,7 @@ int isComplete()
     return 1;
 }
 
-// Main function
+// The Main function
 int main()
 {
     int row, col, num;
